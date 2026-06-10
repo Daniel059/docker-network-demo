@@ -10,7 +10,6 @@ A simple demonstration of two Flask applications communicating over a custom Doc
 
 ## Project Structure
 ```text
-.
 ├── docker-compose.yml
 ├── app1/
 │   ├── Dockerfile
