@@ -1,0 +1,20 @@
+services:
+  app1:
+    build: ./app1
+    container_name: app1
+    networks:
+      - customnet
+
+  app2:
+    build: ./app2
+    container_name: app2
+    depends_on:
+      - app1
+    ports:
+      - "5002:5002"
+    networks:
+      - customnet
+
+networks:
+  customnet:
+    driver: bridge
